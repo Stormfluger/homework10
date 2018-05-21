@@ -27,7 +27,7 @@ socket.addEventListener('message', (event) => {
     chatBox.content.appendChild(messageInput).scrollIntoView({block: "end", behavior: "smooth"});
   } else {
     addMessage(messageTemplates, data);
-    chatBox.content.removeChild(messageInput);
+    //chatBox.content.removeChild(messageInput);
     chatBox.content.appendChild(messageTemplates).scrollIntoView({block: "end", behavior: "smooth"});
   }
 });
